@@ -1,0 +1,75 @@
+/*
+	This file stores all the style rules for
+	the header of each page.  Each page should
+	have a #headerDiv and #headerSpacer
+*/
+#headerDiv{
+	position: fixed;
+	left:0px;
+	top:0px;
+
+	width:calc(100% - 13px);
+	height:70px;
+
+	background:#0a2351;
+	
+	z-index:999;
+}
+#headerDiv table{
+	float:right;
+	height:65px;
+}
+#headerDiv table tr td{
+	text-align:center;
+}
+#headerDiv table tr td a{
+	color:#e6e9ed;
+	text-decoration:none;
+	margin:14px;
+}
+
+#headerSpacer{
+	position:absolute;
+	left:0;
+	top:0;
+
+	width:100%;
+	height:90px;
+}
+
+#headerDiv div{
+	float:left;
+}
+
+@media only screen and (max-width:799px){
+	#mobileNav{
+		display:inline !important;	
+	}
+	#desktopNav{
+		display:none !important;
+	}
+	
+	#mobileNavButton img{
+		position:relative;
+		top:5px;
+		width:60px;
+	}
+	#mobileNavLinks{
+		visibility:hidden;
+		background-color: #0a2351;
+		padding-bottom:10px;
+		padding-top:10px;
+	}
+}
+
+@media only screen and (min-width:800px){
+	#mobileNav{
+		display:none !important;	
+	}
+	#desktopNav{
+		display:inline !important;
+	}
+	#headerDiv table tr td{
+	padding-top:23px;
+}
+}

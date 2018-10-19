@@ -1,0 +1,35 @@
+#characterList{
+	position:relative;
+	top:70px;
+	left:50%;
+	transform:translate(-194px,0px);
+	
+	width:392px;
+}
+#mainDiv{
+	position:relative;
+	top:80px;
+}
+
+p, td, span{
+	color:#e6e9ed;
+}
+body{
+	background:#e6e9ed;
+}
+
+.fancyBorder{
+	border:2px solid #6B4900;
+}
+.fancyBorder div{
+	border:2px solid #FFB64A;
+}
+.fancyBorder div div{
+	border:2px solid #FFFFFF;
+}
+.fancyBorder div div div{
+	border:2px solid #6B4900;
+	background:#0a2351;
+	padding-left:10px;
+	padding-right:10px;
+}
