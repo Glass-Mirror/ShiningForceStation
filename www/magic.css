@@ -1,0 +1,42 @@
+body{
+	background:#0a2351;
+        color:#cccccc;
+}
+
+.spell{
+	position:relative;
+	margin-top:20px;
+	height:200px;
+	display:flex;
+	flex-direction:row;
+}
+#list{
+	position:relative;
+	left:calc(50% - 200px);
+	padding:5px;
+
+	text-align:center;	
+	width:400px !important;
+}
+#list img{
+	width:80px;
+	
+}
+.spell img{
+	width:80px;
+}
+.spell td{
+	text-align:center;
+	padding:5px;
+}
+.spell th{
+	text-algin:center;
+	padding:5px;
+}
+.tableTopSpacer{
+	height:20px;
+}
+
+@media (max-width: 600px){
+	
+}

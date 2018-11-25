@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8"/>
+                <meta name="viewport" content="width=device-width,initial-scale=1">
+                <link rel="stylesheet" type="text/css" href="general.css"/>
+                <link rel="stylesheet" type="text/css" href="magic.css"/>
+                <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+                <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+                <script src="header.js"></script>
+                <title>Magic</title>
+        </head>
+        <body>
+		<div class="fancyBorder" id="header">
+			<a href="/">
+				<img src="logo.png" height="100%"/>
+			</a>
+			<table id="desktopNav"><tr>
+                                <td><a href="guide.html">Guide</a></td>
+                                <td><a href="characters.html">Characters</a></td>
+                                <td><a href="magic.html">Magic</a></td>
+                                <td><a href="weapons.html">Weapons</a></td>
+                                <td><a href="items.html">Items</a></td>
+                                <td><a href="secrets.html">Secrets</a></td>
+                                <td><a href="about.html">About</a></td>
+                        </tr></table>
+			<table id="mobileNav">
+                                <tr><td id="mobileNavButton" onclick="toggleMobileNavLinks()">
+                                        <img src="img/nav.png"/>
+                     		</td></tr>
+                                <tr><td>
+                                        <table id="mobileNavLinks" class="fancyBorder">
+						<tr><td><a href="guide.html">Guide</a></td></tr>
+						<tr><td><a href="characters.html">Characters</a></td></tr>
+						<tr><td><a href="magic.html">Magic</a></td></tr>
+						<tr><td><a href="weapons.html">Weapons</a></td></tr>
+						<tr><td><a href="items.html">Items</a></td></tr>
+						<tr><td><a href="secrets.html">Secrets</a></td></tr>
+						<tr><td><a href="about.html">About</a></td></tr>
+					</table>
+				</td></tr>
+			</table>
+		</div>
+		<div id="content">
+			<table id="list" class="fancyBorder">
+				<tr>
+					<td><a href="#egress"><img src="img/egress.png" alt="Egress"/></a></td>
+					<td><a href="#heal"><img src="img/heal.png" alt="Heal"/></a></td>
+					<td><a href="#detox"><img src="img/detox.png" alt="Detox"/></a></td>
+					<td><a href="#dispel"><img src="img/dispel.png" alt="Dispel"/></a></td>
+					<td><a href="#aura"><img src="img/aura.png" alt="Aura"/></a></td>
+				</tr>
+				<tr>
+                                        <td><a href="#blaze"><img src="img/blaze.png" alt="Blaze"/></a></td>
+                                        <td><a href="#freeze"><img src="img/freeze.png" alt="Freeze"/></a></td>
+                                        <td><a href="#bolt"><img src="img/bolt.png" alt="Bolt"/></a></td>
+                                        <td><a href="#desoul"><img src="img/desoul.png" alt="Desoul"/></a></td>
+                                        <td><a href="#muddle"><img src="img/muddle.png" alt="Muddle"/></a></td>
+                                </tr>
+				<tr>
+                                        <td><a href="#boost"><img src="img/boost.png" alt="Boost"/></a></td>
+                                        <td><a href="#shield"><img src="img/shield.png" alt="Shield"/></a></td>
+                                        <td><a href="#quick"><img src="img/quick.png" alt="Quick"/></a></td>
+                                        <td><a href="#slow"><img src="img/slow.png" alt="Slow"/></a></td>
+                                        <td><a href="#sleep"><img src="img/sleep.png" alt="Sleep"/></a></td>
+                                </tr>
+			</table>
+			<div id="egress" class="linkLoc"></div>
+			<div class="spell fancyBorder">
+				<span>
+				<h3>&nbspEgress&nbsp</h3>
+				<img src="img/egress.png"/>
+				</span>
+				<p>&nbsp&nbsp&nbsp</p>
+				<table>
+					<tr class="tableTopSpacer"></tr>
+					<tr>
+						<th>Level</th>
+						<th>MP</th>
+						<th>Effect</th>
+						<th>Range</th>
+						<th>Target</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>8</td>
+						<td>Escape battle</td>
+						<td>0</td>
+						<td>□</td>
+					</tr>
+				</table>
+			</div>
+			<div id="heal" class="linkLoc"></div>
+			<div class="spell fancyBorder">
+				<span>
+                                <h3>&nbspHeal&nbsp</h3>
+                                <img src="img/heal.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>3</td>
+                                                <td>Heal ~10HP</td>
+                                                <td>1</td>
+                                                <td>□</td>
+                                        </tr>
+                                        <tr>
+                                                <td>2</td>
+                                                <td>6</td>
+                                                <td>Heal ~10HP</td>
+                                                <td>2</td>
+                                                <td>□</td>
+                                        </tr>
+                                        <tr>
+                                                <td>3</td>
+                                                <td>10</td>
+                                                <td>Heal ~25HP</td>
+                                                <td>3</td>
+                                                <td>□</td>
+                                        </tr>
+                                        <tr>
+                                                <td>4</td>
+                                                <td>20</td>
+                                                <td>Heal all HP</td>
+                                                <td>1</td>
+                                                <td>□</td>
+                                        </tr>
+                                </table>
+			</div>
+			<div id="detox" class="linkLoc"></div>
+			<div class="spell fancyBorder">
+				<span>
+                                <h3>&nbspDetox&nbsp</h3>
+                                <img src="img/detox.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>3</td>
+                                                <td>Cure poison</td>
+                                                <td>1</td>
+                                                <td>□</td>
+                                        </tr>
+                                </table>
+			</div>
+                        <div id="dispel" class="linkLoc"></div>
+                        <div class="spell fancyBorder">
+                                <span>
+                                <h3>&nbspDispel&nbsp</h3>
+                                <img src="img/dispel.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>5</td>
+                                                <td>Prevents character from spell casting</td>
+                                                <td>2</td>
+                                                <td>□</td>
+                                        </tr>
+                                </table>
+                        </div>
+                        <div id="aura" class="linkLoc"></div>
+                        <div class="spell fancyBorder">
+                                <span>
+                                <h3>&nbspAura&nbsp</h3>
+                                <img src="img/aura.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>7</td>
+                                                <td>Heal ~15HP</td>
+                                                <td>3</td>
+                                                <td>+</td>
+                                        </tr>
+                                        <tr>
+                                                <td>2</td>
+                                                <td>11</td>
+                                                <td>Heal ~15HP</td>
+                                                <td>3</td>
+                                                <td>◇</td>
+                                        </tr>
+                                        <tr>
+                                                <td>3</td>
+                                                <td>15</td>
+                                                <td>Heal ~25HP</td>
+                                                <td>3</td>
+                                                <td>◇</td>
+                                        </tr>
+                                        <tr>
+                                                <td>4</td>
+                                                <td>18</td>
+                                                <td>Heal ~40HP</td>
+                                                <td>0</td>
+                                                <td>All</td>
+                                        </tr>
+                                </table>
+                        </div>
+                        <div id="blaze" class="linkLoc"></div>
+                        <div class="spell fancyBorder">
+                                <span>
+                                <h3>&nbspBlaze&nbsp</h3>
+                                <img src="img/blaze.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>Deal ~6 damage</td>
+                                                <td>2</td>
+                                                <td>□</td>
+                                        </tr>
+                                        <tr>
+                                                <td>2</td>
+                                                <td>5</td>
+                                                <td>Deal ~10 damage</td>
+                                                <td>2</td>
+                                                <td>+</td>
+                                        </tr>
+                                        <tr>
+                                                <td>3</td>
+                                                <td>8</td>
+                                                <td>Deal ~15 damage</td>
+                                                <td>2</td>
+                                                <td>+</td>
+                                        </tr>
+                                        <tr>
+                                                <td>4</td>
+                                                <td>8</td>
+                                                <td>Deal ~30 damage</td>
+                                                <td>2</td>
+                                                <td>□</td>
+                                        </tr>
+                                </table>
+                        </div>
+                        <div id="freeze" class="linkLoc"></div>
+                        <div class="spell fancyBorder">
+                                <span>
+                                <h3>&nbspFreeze&nbsp</h3>
+                                <img src="img/freeze.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>3</td>
+                                                <td>Deal ~9 damage</td>
+                                                <td>2</td>
+                                                <td>□</td>
+                                        </tr>
+                                        <tr>
+                                                <td>2</td>
+                                                <td>7</td>
+                                                <td>Deal ~9 damage</td>
+                                                <td>2</td>
+                                                <td>+</td>
+                                        </tr>
+                                        <tr>
+                                                <td>3</td>
+                                                <td>10</td>
+                                                <td>Deal ~15 damage</td>
+                                                <td>3</td>
+                                                <td>+</td>
+                                        </tr>
+                                        <tr>
+                                                <td>4</td>
+                                                <td>10</td>
+                                                <td>Deal ~40 damage</td>
+                                                <td>3</td>
+                                                <td>□</td>
+                                        </tr>
+                                </table>
+                        </div>
+                        <div id="bolt" class="linkLoc"></div>
+                        <div class="spell fancyBorder">
+                                <span>
+                                <h3>&nbspBolt&nbsp</h3>
+                                <img src="img/bolt.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>8</td>
+                                                <td>Deal ~15 damage</td>
+                                                <td>2</td>
+                                                <td>+</td>
+                                        </tr>
+                                        <tr>
+                                                <td>2</td>
+                                                <td>15</td>
+                                                <td>Deal ~25 damage</td>
+                                                <td>3</td>
+                                                <td>+</td>
+                                        </tr>
+                                        <tr>
+                                                <td>3</td>
+                                                <td>20</td>
+                                                <td>Deal ~25 damage</td>
+                                                <td>3</td>
+                                                <td>◇</td>
+                                        </tr>
+                                        <tr>
+                                                <td>4</td>
+                                                <td>20</td>
+                                                <td>Deal ~55 damage</td>
+                                                <td>3</td>
+                                                <td>□</td>
+                                        </tr>
+                                </table>
+                        </div>
+                        <div id="desoul" class="linkLoc"></div>
+                        <div class="spell fancyBorder">
+                                <span>
+                                <h3>&nbspDesoul&nbsp</h3>
+                                <img src="img/desoul.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>15</td>
+                                                <td>Instatly kill target</td>
+                                                <td>2</td>
+                                                <td>□</td>
+                                        </tr>
+                                </table>
+                        </div>
+                        <div id="muddle" class="linkLoc"></div>
+                        <div class="spell fancyBorder">
+                                <span>
+                                <h3>&nbspMuddle&nbsp</h3>
+                                <img src="img/muddle.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>6</td>
+                                                <td>Confuse target</td>
+                                                <td>2</td>
+                                                <td>□</td>
+                                        </tr>
+                                </table>
+                        </div>
+                        <div id="boost" class="linkLoc"></div>
+                        <div class="spell fancyBorder">
+                                <span>
+                                <h3>&nbspBoost&nbsp</h3>
+                                <img src="img/boost.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>15</td>
+                                                <td>Increase AT by ~15</td>
+                                                <td>3</td>
+                                                <td>□</td>
+                                        </tr>
+                                </table>
+                        </div>
+                        <div id="shield" class="linkLoc"></div>
+                        <div class="spell fancyBorder">
+                                <span>
+                                <h3>&nbspShield&nbsp</h3>
+                                <img src="img/shield.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>5</td>
+                                                <td>Resist all magic</td>
+                                                <td>1</td>
+                                                <td>□</td>
+                                        </tr>
+                                </table>
+                        </div>
+                        <div id="quick" class="linkLoc"></div>
+                        <div class="spell fancyBorder">
+                                <span>
+                                <h3>&nbspQuick&nbsp</h3>
+                                <img src="img/quick.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>5</td>
+                                                <td>Increase DF and AG by ~5</td>
+                                                <td>1</td>
+                                                <td>□</td>
+                                        </tr>
+                                        <tr>
+                                                <td>2</td>
+                                                <td>16</td>
+                                                <td>Increase DF and AG by ~10</td>
+                                                <td>2</td>
+                                                <td>+</td>
+                                        </tr>
+                                </table>
+                        </div>
+                        <div id="slow" class="linkLoc"></div>
+                        <div class="spell fancyBorder">
+                                <span>
+                                <h3>&nbspSlow&nbsp</h3>
+                                <img src="img/slow.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>5</td>
+                                                <td>Decrease DF and AG by ~5</td>
+                                                <td>2</td>
+                                                <td>□</td>
+                                        </tr>
+                                        <tr>
+                                                <td>2</td>
+                                                <td>20</td>
+                                                <td>Decrease DF and AG by ~10</td>
+                                                <td>2</td>
+                                                <td>+</td>
+                                        </tr>
+                                </table>
+                        </div>
+                        <div id="sleep" class="linkLoc"></div>
+                        <div class="spell fancyBorder">
+                                <span>
+                                <h3>&nbspSleep&nbsp</h3>
+                                <img src="img/sleep.png"/>
+                                </span>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <table>
+                                        <tr class="tableTopSpacer"></tr>
+                                        <tr>
+                                                <th>Level</th>
+                                                <th>MP</th>
+                                                <th>Effect</th>
+                                                <th>Range</th>
+                                                <th>Target</th>
+                                        </tr>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>6</td>
+                                                <td>Target falls asleep</td>
+                                                <td>1</td>
+                                                <td>□</td>
+                                        </tr>
+                                </table>
+                        </div>
+		</div>
+	</body>
+</html>
