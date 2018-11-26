@@ -8,9 +8,10 @@
                 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
                 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
                 <script src="header.js"></script>
+		<script src="weapons.js"></script>
                 <title>Weapons</title>
         </head>
-        <body>
+        <body onload="onLoad()">
 		<div class="fancyBorder" id="header">
 			<a href="/">
 				<img src="logo.png" height="100%"/>
@@ -42,7 +43,399 @@
 			</table>
 		</div>
 		<div id="content">
-			<p>Under construction!</p>
+			<table id="list" class="fancyBorder">
+				<tr> <!--Swords-->
+					<td><a href="#shortsword"><img src="img/shortsword.png" alt="Short Sword"/></a></td>
+					<td><a href="#middlesword"><img src="img/middlesword.png" alt="Middle Sword"/></a></td>
+					<td><a href="#longsword"><img src="img/longsword.png" alt="Long Sword"/></a></td>
+					<td class="tableSpace"></td>
+					<td class="promo"><a href="#steelsword"><img src="img/steelsword.png" alt="Steel Sword"/></a></td>
+					<td class="promo"><a href="#broadsword"><img src="img/broadsword.png" alt="Broad Sword"/></a></td>
+					<td class="promo"><a href="#doomblade"><img src="img/doomblade.png" alt="Doom Blade"/></a></td>
+					<td class="promo"><a href="#katana"><img src="img/katana.png" alt="Katana"/></a></td>
+					<td class="promo"><a href="#swordoflight"><img src="img/swordoflight.png" alt="Sword Of Light"/></a></td>
+					<td class="promo"><a href="#swordofdarkness"><img src="img/swordofdarkness.png" alt="Sword Of Darkness"/></a></td>
+					<td class="promo"><a href="#chaosbreaker"><img src="img/chaosbreaker.png" alt="Chaos Breaker"/></a></td>
+				</tr>
+				<tr> <!--Axes-->
+					<td><a href="#handaxe"><img src="img/handaxe.png" alt="Hand Axe"/></a></td>
+					<td><a href="#middleaxe"><img src="img/middleaxe.png" alt="Middle Axe"/></a></td>
+					<td><a href="#battleaxe"><img src="img/battleaxe.png" alt="Battle Axe"/></a></td>
+					<td class="tableSpace"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="promo"><a href="#heataxe"><img src="img/heataxe.png" alt="Heat Axe"/></a></td>
+					<td class="promo"><a href="#greataxe"><img src="img/greataxe.png" alt="Great Axe"/></a></td>
+					<td class="promo"><a href="#atlas"><img src="img/atlas.png" alt="Atlas"/></a></td>
+				</tr>
+				<tr> <!--Spears/Lances-->
+					<td><a href="#spear"><img src="img/spear.png" alt="Spear"/></a></td>
+					<td><a href="#bronzelance"><img src="img/bronzelance.png" alt="Bronze Lance"/></a></td>
+					<td><a href="#powerspear"><img src="img/powerspear.png" alt="Power Spear"/></a></td>
+					<td class="tableSpace"></td>
+					<td></td>
+					<td></td>
+					<td class="promo"><a href="#steellance"><img src="img/steellance.png" alt="Steel Lance"/></a></td>
+					<td class="promo"><a href="#chromelance"><img src="img/chromelance.png" alt="Chrome Lance"/></a></td>
+					<td class="promo"><a href="#halberd"><img src="img/halberd.png" alt="Halberd"/></a></td>
+					<td class="promo"><a href="#devillance"><img src="img/devillance.png" alt="Devil Lance"/></a></td>
+					<td class="promo"><a href="#valkyrie"><img src="img/valkyrie.png" alt="Valkyrie"/></a></td>
+				</tr>
+				<tr> <!--Bows-->
+					<td><a href="#woodenarrow"><img src="img/woodenarrow.png" alt="Wooden Arrow"/></a></td>
+					<td><a href="#steelarrow"><img src="img/steelarrow.png" alt="Steel Arrow"/></a></td>
+					<td><a href="#elvenarrow"><img src="img/elvenarrow.png" alt="Elven Arrow"/></a></td>
+					<td class="tableSpace"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="promo"><a href="#assaultshell"><img src="img/assaultshell.png" alt="Assault Shell"/></a></td>
+					<td class="promo"><a href="#bustershot"><img src="img/bustershot.png" alt="Buster Shot"/></a></td>
+				</tr>
+				<tr> <!--Staffs-->
+					<td><a href="#woodenstaff"><img src="img/woodenstaff.png" alt="Wooden Staff"/></a></td>
+					<td><a href="#powerstaff"><img src="img/powerstaff.png" alt="Power Staff"/></a></td>
+					<td class="spaceAdd"></td>
+					<td class="tableSpace"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="promo"><a href="#guardianstaff"><img src="img/guardianstaff.png" alt="Guardian Staff"/></a></td>
+					<td class="promo"><a href="#holystaff"><img src="img/holystaff.png" alt="Holy Staff"/></a></td>
+					<td class="promo"><a href="#demonrod"><img src="img/demonrod.png" alt="Demon Rod"/></a></td>
+				</tr>
+			</table>
+			<div class="details">
+				<table class="fancyBorder">
+					<tr>
+						<th>Icon</th>
+						<th>Name</th>
+						<th>Users</th>
+						<th>Attack</th>
+						<th>Range</th>
+						<th>Notes</th>
+					</tr>
+					<tr class="linkLoc" id="shortsword"></tr>
+					<tr>
+						<td><img src="img/shortsword.png"/></td>
+						<td>Short Sword</td>
+						<td>SDMN, WARR, BDMN</td>
+						<td>+5</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="middlesword"></tr>
+					<tr>
+						<td><img src="img/middlesword.png"/></td>
+						<td>Middle Sword</td>
+						<td>SDMN, WARR, BDMN</td>
+						<td>+8</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="longsword"></tr>
+					<tr>
+						<td><img src="img/longsword.png"/></td>
+						<td>Long Sword</td>
+						<td>SDMN, BDMN</td>
+						<td>+12</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="steelsword"></tr>
+					<tr>
+						<td><img src="img/steelsword.png"/></td>
+						<td>Steel Sword</td>
+						<td>HERO, SKYW, NINJ, SMR</td>
+						<td>+18</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="broadsword"></tr>
+					<tr>
+						<td><img src="img/broadsword.png"/></td>
+						<td>Broad Sword</td>
+						<td>HERO, SKYW, NINJ, SMR</td>
+						<td>+20</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="doomblade"></tr>
+					<tr>
+						<td><img src="img/doomblade.png"/></td>
+						<td>Doom Blade</td>
+						<td>HERO, SKYW, NINJ, SMR</td>
+						<td>+25</td>
+						<td>1</td>
+						<td>Attack has a chance to insta-kill enemy</td>
+					</tr>
+					<tr class="linkLoc" id="katana"></tr>
+					<tr>
+						<td><img src="img/katana.png"/></td>
+						<td>Katana</td>
+						<td>HERO, SKYW, NINJ, SMR</td>
+						<td>+30</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="swordoflight"></tr>
+					<tr>
+						<td><img src="img/swordoflight.png"/></td>
+						<td>Sword of Light</td>
+						<td>HERO</td>
+						<td>+36</td>
+						<td>1</td>
+						<td>Use for Bolt 2</td>
+					</tr>
+					<tr class="linkLoc" id="swordofdarkness"></tr>
+					<tr>
+						<td><img src="img/swordofdarkness.png"/></td>
+						<td>Sword of Darkness</td>
+						<td>HERO, SKYW</td>
+						<td>+40</td>
+						<td>1</td>
+						<td>Use for Desoul</td>
+					</tr>
+					<tr class="linkLoc" id="chaosbreaker"></tr>
+					<tr>
+						<td><img src="img/chaosbreaker.png"/></td>
+						<td>Chaos Breaker</td>
+						<td>HERO</td>
+						<td>+40</td>
+						<td>1</td>
+						<td>Use for Freeze 3</td>
+					</tr>
+					
+					
+					<tr class="linkLoc" id="handaxe"></tr>
+					<tr>
+						<td><img src="img/handaxe.png"/></td>
+						<td>Hand Axe</td>
+						<td>WARR</td>
+						<td>+7</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="middleaxe"></tr>
+					<tr>
+						<td><img src="img/middleaxe.png"/></td>
+						<td>Middle Axe</td>
+						<td>WARR</td>
+						<td>+11</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="battleaxe"></tr>
+					<tr>
+						<td><img src="img/battleaxe.png"/></td>
+						<td>Battle Axe</td>
+						<td>WARR</td>
+						<td>+16</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="heataxe"></tr>
+					<tr>
+						<td><img src="img/heataxe.png"/></td>
+						<td>Heat Axe</td>
+						<td>GLDR</td>
+						<td>+22</td>
+						<td>1</td>
+						<td>Use for Blaze 2</td>
+					</tr>
+					<tr class="linkLoc" id="greataxe"></tr>
+					<tr>
+						<td><img src="img/greataxe.png"/></td>
+						<td>Great Axe</td>
+						<td>GLDR</td>
+						<td>+26</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="atlas"></tr>
+					<tr>
+						<td><img src="img/atlas.png"/></td>
+						<td>Atlas</td>
+						<td>GLDR</td>
+						<td>+33</td>
+						<td>1</td>
+						<td>Use for Blaze 3</td>
+					</tr>
+					
+					
+					<tr class="linkLoc" id="spear"></tr>
+					<tr>
+						<td><img src="img/spear.png"/></td>
+						<td>Spear</td>
+						<td>KNT, WKNT, SKNT</td>
+						<td>+8</td>
+						<td>1-2</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="bronzelance"></tr>
+					<tr>
+						<td><img src="img/bronzelance.png"/></td>
+						<td>Bronze Lance</td>
+						<td>KNT, WKNT, SKNT</td>
+						<td>+9</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="powerspear"></tr>
+					<tr>
+						<td><img src="img/powerspear.png"/></td>
+						<td>Power Spear</td>
+						<td>KNT, WKNT, SKNT</td>
+						<td>+15</td>
+						<td>1-2</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="steellance"></tr>
+					<tr>
+						<td><img src="img/steellance.png"/></td>
+						<td>Steel Lance</td>
+						<td>PLDN, SKYL, SBRN</td>
+						<td>+18</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="chromelance"></tr>
+					<tr>
+						<td><img src="img/chromelance.png"/></td>
+						<td>Chrome Lance</td>
+						<td>PLDN, SKYL, SBRN</td>
+						<td>+22</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="halberd"></tr>
+					<tr>
+						<td><img src="img/halberd.png"/></td>
+						<td>Halberd</td>
+						<td>PLDN, SKYL, SBRN</td>
+						<td>+25</td>
+						<td>1</td>
+						<td>Use for Bolt 1</td>
+					</tr>
+					<tr class="linkLoc" id="devillance"></tr>
+					<tr>
+						<td><img src="img/devillance.png"/></td>
+						<td>Devil Lance</td>
+						<td>PLDN, SKYL, SBRN</td>
+						<td>+35</td>
+						<td>1</td>
+						<td>Cursed</td>
+					</tr>
+					<tr class="linkLoc" id="valkyrie"></tr>
+					<tr>
+						<td><img src="img/valkyrie.png"/></td>
+						<td>Valkyrie</td>
+						<td>PLDN, SKYL, SBRN</td>
+						<td>+35</td>
+						<td>1-2</td>
+						<td>None</td>
+					</tr>
+					
+					
+					<tr class="linkLoc" id="woodenarrow"></tr>
+					<tr>
+						<td><img src="img/woodenarrow.png"/></td>
+						<td>Wooden Arrow</td>
+						<td>ACHR, ASKT</td>
+						<td>+8</td>
+						<td>2</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="steelarrow"></tr>
+					<tr>
+						<td><img src="img/steelarrow.png"/></td>
+						<td>Steel Arrow</td>
+						<td>ACHR, ASKT</td>
+						<td>+13</td>
+						<td>2</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="elvenarrow"></tr>
+					<tr>
+						<td><img src="img/elvenarrow.png"/></td>
+						<td>Elven Arrow</td>
+						<td>BWMS, ASKT</td>
+						<td>+18</td>
+						<td>2-3</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="assaultshell"></tr>
+					<tr>
+						<td><img src="img/assaultshell.png"/></td>
+						<td>Assault Shell</td>
+						<td>BWMS, SKNT</td>
+						<td>+27</td>
+						<td>2-3</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="bustershot"></tr>
+					<tr>
+						<td><img src="img/bustershot.png"/></td>
+						<td>Buster Shot</td>
+						<td>BWMS, SKNT</td>
+						<td>+35</td>
+						<td>2-3</td>
+						<td>None</td>
+					</tr>
+					
+					
+					<tr class="linkLoc" id="woodenstaff"></tr>
+					<tr>
+						<td><img src="img/woodenstaff.png"/></td>
+						<td>Wooden Staff</td>
+						<td>HEAL, MAGE</td>
+						<td>+4</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="powerstaff"></tr>
+					<tr>
+						<td><img src="img/powerstaff.png"/></td>
+						<td>Power Staff</td>
+						<td>HEAL, MAGE</td>
+						<td>+12</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="guardianstaff"></tr>
+					<tr>
+						<td><img src="img/guardianstaff.png"/></td>
+						<td>Guardian Staff</td>
+						<td>VICR, WIZD</td>
+						<td>+18</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="holystaff"></tr>
+					<tr>
+						<td><img src="img/holystaff.png"/></td>
+						<td>Holy Staff</td>
+						<td>VICR</td>
+						<td>+26</td>
+						<td>1</td>
+						<td>None</td>
+					</tr>
+					<tr class="linkLoc" id="demonrod"></tr>
+					<tr>
+						<td><img src="img/demonrod.png"/></td>
+						<td>Demon Rod</td>
+						<td>WIZD</td>
+						<td>+35</td>
+						<td>1</td>
+						<td>Use to drain MP</td>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</body>
 </html>

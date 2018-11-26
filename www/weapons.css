@@ -1,0 +1,46 @@
+#list{
+	position:relative;
+	left:50%;
+	transform:translate(-50%,0%);
+
+	width:600px;
+}
+#list img{
+	width:100%;
+}
+#list td{
+	width:9.5%;
+}
+
+.tableSpace{
+	width:5% !important;	
+}
+
+.details{
+	position:relative;
+	top:20px;
+}
+.details img{
+	width:40px;
+}
+.details td{
+	padding-left:15px;
+	text-align:center;
+}
+.details th{
+	padding-left:15px;
+}
+
+.details table{
+	position:relative;
+	left:50%;
+	transform:translate(-50%, 0%);
+}
+
+.details{
+	position:relative;
+	left:50%;
+	transform:translate(-50%, 0%);
+
+	max-width:900px;
+}

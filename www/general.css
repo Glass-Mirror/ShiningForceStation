@@ -13,7 +13,7 @@ body{
 	position:fixed;
 	top:0px;
 	left:0px;
-	height:8vh;
+	height:80px;
 	z-index:999;
 	background-color:#0a2351;
 }
@@ -38,7 +38,7 @@ body{
 
 #content{
 	position:relative;
-	top:9.5vh;
+	top:100px;
 }
 
 
@@ -89,5 +89,5 @@ body{
 .linkLoc{
 	position:relative;
 	left:0px;
-	top:-80px;
+	top:-95px;
 }
