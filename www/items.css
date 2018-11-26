@@ -3,13 +3,13 @@
 	left:50%;
 	transform:translate(-50%,0%);
 
-	max-width:600px;
+	max-width:400px;
 }
 #list img{
 	width:100%;
 }
 #list td{
-	width:9.5%;
+	width:14%;
 }
 
 .tableSpace{
