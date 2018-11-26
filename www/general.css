@@ -53,6 +53,7 @@ body{
 
 	#mobileNavButton{
 		text-align:center;
+		width:114px;
 	}
         #mobileNavButton img{
                 position:relative;
@@ -60,7 +61,7 @@ body{
         }
         #mobileNavLinks{
 		text-align:center;
-		visibility:hidden;
+		displayL:none;
 		background-color: #0a2351;
                 padding-bottom:10px;
                 padding-top:10px;
