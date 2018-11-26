@@ -44,3 +44,22 @@
 
 	max-width:900px;
 }
+
+@media only screen and (max-width:500px){
+	.details table td:nth-child(3){
+		display:none;
+	}
+	.details table th:nth-child(3){
+		display:none;
+	}
+}
+
+@media only screen and (max-width:420px){
+        .details table td:nth-child(5){
+                display:none;
+        }
+        .details table th:nth-child(5){
+                display:none;
+        }
+}
+
