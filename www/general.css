@@ -61,7 +61,7 @@ body{
         }
         #mobileNavLinks{
 		text-align:center;
-		displayL:none;
+		display:none;
 		background-color: #0a2351;
                 padding-bottom:10px;
                 padding-top:10px;
@@ -72,6 +72,20 @@ body{
 	}
 }
 
+@media only screen and (max-width:325px){
+	#header img{
+		display:none;
+	}
+	#mobileNav img{
+		display:inline;
+	}
+	#mobileNav{
+		position:fixed;
+		left:calc(50% - 50px);
+		height:80px;
+	}
+	
+}
 
 .fancyBorder{ 
         width:calc(100% - 12px);
