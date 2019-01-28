@@ -1,162 +1,191 @@
-#characterList{
+#list{
 	position:relative;
-	top:90px;
-	left:50%;
-	transform:translate(-194px,0px);
-	
-	width:392px;
-}
-#mainDiv{
-	position:relative;
-	top:200px;
+	left:calc(50% - 200px);
+
+	max-width:400px;
 }
 
-body{
-	background:#0a2351;
-	color:#cccccc;
+.linkLoc{
+	top:-100px;
 }
 
-.details{
-		margin-bottom:30px;
+.character{
+	margin-bottom:30px;
+	margin-top:30px;
+	position:relative;
 }
+
+.character img{
+	width:240px;
+	position:absolute;
+	margin:5px;
+}
+
+.character table tr td img{
+	width:40px;
+	margin:0px;
+	position:relative;
+}
+
+.name{
+	font-weight:bold;
+	font-size:40px;
+	position:absolute;
+	left: 260px;
+	top:5px;
+}
+
+.class{
+	position:absolute;
+	text-align:right;
+	left:calc(100% - 410px);
+	width:400px;
+	top:5px;
+}
+
+.description{
+	position:absolute;
+	width:calc(100% - 280px);
+	left:260px;
+	top:80px;
+}
+
+.stats{
+	position:absolute;
+	top:350px;
+	left:10px;
+	text-align:center;
+}
+
+.weapons{
+	position:absolute;
+	top:500px;
+	left:10px;
+	text-align:center;
+}
+
+.spells{
+	position:absolute;
+	left:calc(100% - 240px);
+	top:660px;
+	text-align:center;
+	transform:translate(0%,-100%);
+	margin:10px;
+}
+
+.char2{
+	height:700px;
+}
+
+.char1{
+	height:500px;
+}
+
+.char1 .spells{
+	top:460px;
+}
+
 
 @media only screen and (max-width:960px){
-	.mobile{
-		display:inline !important;	
+	.character{
+		margin-bottom:30px;
+		margin-top:30px;
+		position:static;
+		height:auto;
+		display: block;
+		padding-left:20px;
+		padding-right:20px;
 	}
-	.desktop{
-		display:none !important;
-	}
-	tr,td{
-		text-align:center;
-	}
-	.portrait td img{
+
+	.character img{
 		width:240px;
+		position:static;
+		margin-top:10px;
+		margin-bottom:10px;
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
 	}
-	.icon{
+
+	.character table tr td img{
 		width:40px;
+		margin:0px;
+		position:static;
+		display: inline;
 	}
-	.stats td table tbody tr td img{
-		width:30px;
-	}
+
 	.name{
 		font-weight:bold;
-		font-size:30px;	
+		font-size:40px;
+		width:100%;
+		position:static;
+		left:0px;
+		top:0px;
+		display: block;
+		margin-top:10px;
+		margin-bottom:10px;
+		text-align:center;
 	}
+
 	.class{
-		font-weight:bold;	
+		position:static;
+		text-align:right;
+		width:100%;
+		left:0px;
+		top:0px;
+		display: block;
+		margin-top:10px;
+		margin-bottom:10px;
+		text-align:center;
 	}
-	.stats td table{ 
-		position:relative;
-		left:50%;
-		transform:translate(-50%,0%);
-		margin:5px;
+
+	.description{
+		position:static;
+		width:100%;
+		left:0px;
+		top:0px;
+		display: block;
+		margin-top:10px;
+		margin-bottom:10px;
+		text-align:center;
 	}
-	.weapons td table{ 
-		position:relative;
+
+	.stats{
+		position:static;
+		top:0px;
 		left:50%;
-		transform:translate(-50%,0%);
-		margin:5px;
+		margin-top:10px;
+		margin-bottom:10px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
 	}
-	.spells td table{ 
-		position:relative;
-		left:50%;
-		transform:translate(-50%,0%);
-		margin:5px;
+
+	.weapons{
+		position:static;
+		top:0px;
+		left:0px;
+		margin-top:10px;
+		margin-bottom:10px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+	}
+
+	.spells{
+		position:static;
+		left:0px;
+		top:0px;
+		margin-top:10px;
+		margin-bottom:10px;
+		transform:translate(0%,0%);
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
 	}
 }
 
-@media only screen and (min-width:961px){
-	.mobile{
-		display:none !important;	
-	}
-	.desktop{
-		display:inline !important;
-	}
-	.portrait img{
-		position:relative;
-		left:0px;
-		top:0px;
-		
-		padding: 5px;
-		width:240px;
-	}
-	
-	.details{
-		height:700px;
-	}
-	
-	.desc{
-		position:relative;
-		left:260px;
-		top:-300px;
-		
-		height:330px;
-		width: calc(100% - 260px);
-	}
-	
-	.name{
-		font-weight:bold;
-		font-size:40px;	
-	}
-	.class{
-		margin-left:calc(100% - 450px);
-		font-weight:bold;	
-	}
-	
-	.stats table tbody tr td img{
-		width:40px;
-	}
-	.icon{
-		width:40px;	
-	}
-	
-	.stats{
-		position:relative;
-		top:-320px;
-		left:20px;
-	}
-	.weapons{
-		position:relative;
-		top:-300px;
-		left:20px;
-	}
-	.spells{
-		position:relative;
-		left:calc(100% - 250px);
-		top:-620px;
-	}
-	
-	.desktop{
-		height:700px;
-	}
-	
-	/*Special edits*/
-	#gong .spells{
-		top:-450px;
-	}
-	#zylo{
-		height:500px;
-	}
-	#jogurt{
-		height:450px;
-	}
-	#domingo .spells{
-		top:-380px;
-	}
-	#bleu{
-		height:500px;	
-	}
-	#musashi{
-		height:560px;
-	}
-	#adam{
-		height:500px;
-	}
-	#hanzou{
-		height:630px;
-	}
-	#hanzou .spells{
-		top:-520px;
-	}
-}
+
+
+
+
