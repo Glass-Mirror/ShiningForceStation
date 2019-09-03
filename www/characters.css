@@ -20,5 +20,86 @@
 	margin-bottom:30px;
 	margin-top:30px;
 	position:relative;
+
+	text-align: center;
+	align-content: center;
 }
 
+.name{
+	font-size:40px;
+}
+
+.character img{
+	width: 100%;
+	max-width: 350px;
+}
+.character table img{
+	width:40px;
+}
+
+
+
+
+@media only screen and (max-width:1299px){
+	.stats{
+		margin-left:auto; 
+		margin-right:auto;
+		margin-top:30px;
+	
+	}
+	.weapons{
+		margin-left:auto; 
+		margin-right:auto;
+		margin-top:30px;
+	}
+	.spells{
+		margin-left:auto; 
+		margin-right:auto;
+		margin-top:30px;
+	}
+}
+
+
+@media only screen and (min-width:1300px){
+	.stats{
+		position: relative;
+		top:-450px;
+		left:calc((50% - 175px)/2);
+		transform:translate(-50%, 0%);
+	}
+
+	.weapons{
+		position: relative;
+		top:-350px;
+		left:calc((50% - 175px)/2);
+		transform:translate(-50%, 0%);
+	}
+
+	.spells{
+		position: relative;
+		top:-700px;
+		left:calc((50% + 175px) + calc(calc(calc(100%) - calc(50% + 175px))/2));
+		transform:translate(-50%, 0%);
+	}
+
+	.description{
+		position: relative;
+		top:20px;
+	}
+
+	.character{
+		height: 800px;
+	}
+
+	.noPromo .spells{
+		top:-600px;
+	}
+
+	.noPromoNoWeap .spells{
+		top:-500px;
+	}
+
+	.noWeap .spells{
+		top:-600px;
+	}
+}
