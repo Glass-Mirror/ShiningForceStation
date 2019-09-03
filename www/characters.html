@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
         <head>
-                <meta charset="utf-8"/>
-                <meta name="viewport" content="width=device-width,initial-scale=1">
-                <link rel="stylesheet" type="text/css" href="general.css"/>
-                <link rel="stylesheet" type="text/css" href="characters.css"/>
-		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-                <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-                <script src="header.js"></script>
-                <title>Characters</title>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="general.css"/>
+			<link rel="stylesheet" type="text/css" href="characters.css"/>
+			<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+			<script src="header.js"></script>
+            <title>Characters</title>
         </head>
-        <body>
+        <body onload="onLoad()">
 		<div class="fancyBorder" id="header">
 			<a href="/">
 				<img src="logo.png" height="100%"/>
 			</a>
 			<table id="desktopNav"><tr>
-                                <td><a href="guide.html">Guide</a></td>
-                                <td><a href="characters.html">Characters</a></td>
-                                <td><a href="magic.html">Magic</a></td>
-                                <td><a href="weapons.html">Weapons</a></td>
-                                <td><a href="items.html">Items</a></td>
-                                <td><a href="secrets.html">Secrets</a></td>
-                                <td><a href="about.html">About</a></td>
-                        </tr></table>
+            	<td><a href="guide.html">Guide</a></td>
+                <td><a href="characters.html">Characters</a></td>
+                <td><a href="magic.html">Magic</a></td>
+                <td><a href="weapons.html">Weapons</a></td>
+                <td><a href="items.html">Items</a></td>
+                <td><a href="secrets.html">Secrets</a></td>
+                <td><a href="about.html">About</a></td>
+            </tr></table>
 			<table id="mobileNav">
-                                <tr><td id="mobileNavButton" onclick="toggleMobileNavLinks()">
-                                        <img src="img/nav.png"/>
-                     		</td></tr>
-                                <tr><td>
-                                        <table id="mobileNavLinks" class="fancyBorder">
+                <tr><td id="mobileNavButton" onclick="toggleMobileNavLinks()">
+                    <img src="img/nav.png"/>
+                </td></tr>
+                <tr><td>
+                    <table id="mobileNavLinks" class="fancyBorder">
 						<tr><td><a href="guide.html">Guide</a></td></tr>
 						<tr><td><a href="characters.html">Characters</a></td></tr>
 						<tr><td><a href="magic.html">Magic</a></td></tr>
@@ -42,55 +42,55 @@
 			</table>
 		</div>
 		<div id="content">
-			<table id="list">
+			<table id="list" class="fancyBorder">
 				<tr>
-					<td><a href="#max"><img class="fancyBorder" src="portraits/max.png"/></a></td>
-					<td><a href="#luke"><img class="fancyBorder" src="portraits/luke.png"/></a></td>
-					<td><a href="#ken"><img class="fancyBorder" src="portraits/ken.png"/></a></td>
-					<td><a href="#tao"><img class="fancyBorder" src="portraits/tao.png"/></a></td>
-					<td><a href="#hans"><img class="fancyBorder" src="portraits/hans.png"/></a></td>
-					<td><a href="#lowe"><img class="fancyBorder" src="portraits/lowe.png"/></a></td>
+					<td><a href="#max"><img class="fancyBorder" src="portraits/max.png" alt="Max"/></a></td>
+					<td><a href="#luke"><img class="fancyBorder" src="portraits/luke.png" alt="Luke"/></a></td>
+					<td><a href="#ken"><img class="fancyBorder" src="portraits/ken.png" alt="Ken"/></a></td>
+					<td><a href="#tao"><img class="fancyBorder" src="portraits/tao.png" alt="Tao"/></a></td>
+					<td><a href="#hans"><img class="fancyBorder" src="portraits/hans.png" alt="Hans"/></a></td>
+					<td><a href="#lowe"><img class="fancyBorder" src="portraits/lowe.png" alt="Lowe"/></a></td>
 				</tr>
 				<tr>
-					<td><a href="#gong"><img class="fancyBorder" src="portraits/gong.png"/></a></td>
-					<td><a href="#gort"><img class="fancyBorder" src="portraits/gort.png"/></a></td>
-					<td><a href="#mae"><img class="fancyBorder" src="portraits/mae.png"/></a></td>
-					<td><a href="#khris"><img class="fancyBorder" src="portraits/khris.png"/></a></td>
-					<td><a href="#anri"><img class="fancyBorder" src="portraits/anri.png"/></a></td>
-					<td><a href="#arthur"><img class="fancyBorder" src="portraits/arthur.png"/></a></td>
+					<td><a href="#gong"><img class="fancyBorder" src="portraits/gong.png" alt="Gong"/></a></td>
+					<td><a href="#gort"><img class="fancyBorder" src="portraits/gort.png" alt="Gort"/></a></td>
+					<td><a href="#mae"><img class="fancyBorder" src="portraits/mae.png" alt="Mae"/></a></td>
+					<td><a href="#khris"><img class="fancyBorder" src="portraits/khris.png" alt="Khris"/></a></td>
+					<td><a href="#anri"><img class="fancyBorder" src="portraits/anri.png" alt="Anri"/></a></td>
+					<td><a href="#arthur"><img class="fancyBorder" src="portraits/arthur.png" alt="Arthur"/></a></td>
 				</tr>
 				<tr>
-					<td><a href="#balbaroy"><img class="fancyBorder" src="portraits/balbaroy.png"/></a></td>
-					<td><a href="#amon"><img class="fancyBorder" src="portraits/amon.png"/></a></td>
-					<td><a href="#diane"><img class="fancyBorder" src="portraits/diane.png"/></a></td>
-					<td><a href="#zylo"><img class="fancyBorder" src="portraits/zylo.png"/></a></td>
-					<td><a href="#pelle"><img class="fancyBorder" src="portraits/pelle.png"/></a></td>
-					<td><a href="#jogurt"><img class="fancyBorder" src="portraits/jogurt.png"/></a></td>
+					<td><a href="#balbaroy"><img class="fancyBorder" src="portraits/balbaroy.png" alt="Balbaroy"/></a></td>
+					<td><a href="#amon"><img class="fancyBorder" src="portraits/amon.png" alt="Amon"/></a></td>
+					<td><a href="#diane"><img class="fancyBorder" src="portraits/diane.png" alt="Diane"/></a></td>
+					<td><a href="#zylo"><img class="fancyBorder" src="portraits/zylo.png" alt="Zylo"/></a></td>
+					<td><a href="#pelle"><img class="fancyBorder" src="portraits/pelle.png" alt="Pelle"/></a></td>
+					<td><a href="#jogurt"><img class="fancyBorder" src="portraits/jogurt.png" alt="Jogurt"/></a></td>
 				</tr>
 				<tr>
-					<td><a href="#kokichi"><img class="fancyBorder" src="portraits/kokichi.png"/></a></td>
-					<td><a href="#vankar"><img class="fancyBorder" src="portraits/vankar.png"/></a></td>
-					<td><a href="#guntz"><img class="fancyBorder" src="portraits/guntz.png"/></a></td>
-					<td><a href="#domingo"><img class="fancyBorder" src="portraits/domingo.png"/></a></td>
-					<td><a href="#earnest"><img class="fancyBorder" src="portraits/earnest.png"/></a></td>
-					<td><a href="#lyle"><img class="fancyBorder" src="portraits/lyle.png"/></a></td>
+					<td><a href="#kokichi"><img class="fancyBorder" src="portraits/kokichi.png" alt="Kokichi"/></a></td>
+					<td><a href="#vankar"><img class="fancyBorder" src="portraits/vankar.png" alt="Vankar"/></a></td>
+					<td><a href="#guntz"><img class="fancyBorder" src="portraits/guntz.png" alt="Guntz"/></a></td>
+					<td><a href="#domingo"><img class="fancyBorder" src="portraits/domingo.png" alt="Domingo"/></a></td>
+					<td><a href="#earnest"><img class="fancyBorder" src="portraits/earnest.png" alt="Earnest"/></a></td>
+					<td><a href="#lyle"><img class="fancyBorder" src="portraits/lyle.png" alt="Lyle"/></a></td>
 				</tr>
 				<tr>
-					<td><a href="#bleu"><img class="fancyBorder" src="portraits/bleu.png"/></a></td>
-					<td><a href="#musashi"><img class="fancyBorder" src="portraits/musashi.png"/></a></td>
-					<td><a href="#alef"><img class="fancyBorder" src="portraits/alef.png"/></a></td>
-					<td><a href="#torasu"><img class="fancyBorder" src="portraits/torasu.png"/></a></td>
-					<td><a href="#adam"><img class="fancyBorder" src="portraits/adam.png"/></a></td>
-					<td><a href="#hanzou"><img class="fancyBorder" src="portraits/hanzou.png"/></a></td>
+					<td><a href="#bleu"><img class="fancyBorder" src="portraits/bleu.png" alt="Bleu"/></a></td>
+					<td><a href="#musashi"><img class="fancyBorder" src="portraits/musashi.png" alt="Musashi"/></a></td>
+					<td><a href="#alef"><img class="fancyBorder" src="portraits/alef.png" alt="Alef"/></a></td>
+					<td><a href="#torasu"><img class="fancyBorder" src="portraits/torasu.png" alt="Torasu"/></a></td>
+					<td><a href="#adam"><img class="fancyBorder" src="portraits/adam.png" alt="Adam"/></a></td>
+					<td><a href="#hanzou"><img class="fancyBorder" src="portraits/hanzou.png" alt="Hanzou"/></a></td>
 				</tr>
 			</table>
 			<div class="details">
-				<div class="fancyBorder character char2"> <!-- MAX -->
+				<div class="fancyBorder character"> <!-- MAX -->
 					<div class="linkLoc" id="max"></div>
+					<div class="name"><span>Max</span></div>
 					<img src="portraits/max.png"/>
-					<span class="name">Max</span>
 					<div class="class"><span>Swordsman (SDMN) → Hero (HERO)</span></div>
-					<div class="description"><span>Max is the main character of the game. He is the leader of the shining force and whenever you are out of battle you play as him. You can name him whatever you want, but leave it blank, and he'll be called Max. Max is all around a pretty good fighter, not majorly lagging or excelling in any stat category. He'll only ever learn the spell Egress, regardless of his random MP stat increases. Since the battle is lost if Max dies, some might be worried about using him. But for this very reason, he can fall behind, putting him in more danger of dying. As long as he is kept up with the force and isn't allowed to fall behind, he can be used as a fighter without too much worry. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -149,12 +149,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- LUKE -->
+				<div class="fancyBorder character"> <!-- LUKE -->
 					<div class="linkLoc" id="luke"></div>
+					<div class="name"><span>Luke</span></div>
 					<img src="portraits/luke.png"/>
-					<span class="name">Luke</span>
 					<div class="class"><span>Warrior (WARR) → Gladiator (GLDT)</span></div>
-					<div class="description"><span>Luke is one of the original force. He joins before your first battle. He tends to grow pretty well, at ends up good for the front lines. His ATT and DEF grow enough that he never is really useless. He is consistent and a wonderful warrior. Personally, I really like Luke, and use him in most playthroughs, I get him early, meaning I can easily keep his level up with everyone else. And his DEF and HP grow quickly enough that I don't worry about his death constatntly, not a glass cannnon. Luke, like all the initial party members, it is possible to skip obtaining Luke, if you perform some manual RNG manipulation. </span></div>
+					<div class="description"><span>Desciption</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -195,12 +195,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- KEN -->
+				<div class="fancyBorder character"> <!-- KEN -->
 					<div class="linkLoc" id="ken"></div>
+					<div class="name"><span>Ken</span></div>
 					<img src="portraits/ken.png"/>
-					<span class="name">Ken</span>
 					<div class="class"><span>Knight (KNT) → Paladin (PLDN)</span></div>
-					<div class="description"><span>Ken is one of the original force. He joins before your first battle. He's ok. Early on, he grows quick enough to not become obsolete. But, by the end of chapter 3, he seems to lose this edge. If you push through, he'll end up good though. His stats focus on HP, he'll get tons of it, though, this occurs while his DEF fails to grow half decently. Personally, I don't really like Ken. He gets really high HP and his ATT gets good. But his DEF sucks forever, and I prefer other centaurs and knight-like characters. Ken, like all the initial party members, it is possible to skip obtaining Ken, if you perform some manual RNG manipulation. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -241,12 +241,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- TAO -->
+				<div class="fancyBorder character"> <!-- TAO -->
 					<div class="linkLoc" id="tao"></div>
+					<div class="name"><span>Tao</span></div>
 					<img src="portraits/tao.png"/>
-					<span class="name">Tao</span>
 					<div class="class"><span>Mage (MAGE) → Wizard (WIZD)</span></div>
-					<div class="description"><span>Tao is one of the original force. She joins before your first battle. She's a mage, and really excels early game. Her blaze spells guarantee she can deal at least 6 damage, regardless of the enemy, and up to 9 on some. I really want to like Tao. She's so good early game. But if you want a mage, you've got better options. She's the only mage to learn blaze level 4, of all the 3 elemental magic spells, blaze is the worst. It deal extra to the undead enemies, but late game, these enemies become scarce (though the are in the final battle) Tao, like all the initial party members, it is possible to skip obtaining Tao, if you perform some manual RNG manipulation. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -320,12 +320,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- HANS -->
+				<div class="fancyBorder character"> <!-- HANS -->
 					<div class="linkLoc" id="hans"></div>
+					<div class="name"><span>Hans</span></div>
 					<img src="portraits/hans.png"/>
-					<span class="name">Hans</span>
 					<div class="class"><span>Archer (ACHR) → Sniper (SNIP)</span></div>
-					<div class="description"><span>Hans is one of the original force. He joins before your first battle. He's an archer, as can attack from a distance. Furthermore, as an elf his movement isn't as impacted by forests. Hans is fine. There are better options, but he's nice early game. I usually use him, and depending on how he stacks up later, either sack him, or keep him in. Hans, like all the initial party members, it is possible to skip obtaining Hans, if you perform some manual RNG manipulation. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -363,12 +363,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- LOWE -->
+				<div class="fancyBorder character"> <!-- LOWE -->
 					<div class="linkLoc" id="lowe"></div>
+					<div class="name"><span>Lowe</span></div>
 					<img src="portraits/lowe.png"/>
-					<span class="name">Lowe</span>
 					<div class="class"><span>Healer (HEAL) → Vicar (VICR)</span></div>
-					<div class="description"><span>Lowe is one of the original force. He joins before your first battle. As a healer, he's integral to your force early on. Luckily you'll quickly get better options for your healer, since he'll never be more than mediocre. He does learn a variety of useful spells, but his low defense makes him glass, requiring he be constantly protected. Lowe isn't really that good. You have other options for a healer, all of the better. If you want someone who is decent in a variety of areas, then maybe consider him. But if you need a healer with any specific traits, look elsewhere. Lowe, like all the initial party members, it is possible to skip obtaining Lowe, if you perform some manual RNG manipulation. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -442,12 +442,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char1"> <!-- GONG -->
+				<div class="fancyBorder character"> <!-- GONG -->
 					<div class="linkLoc" id="gong"></div>
+					<div class="name"><span>Gong</span></div>
 					<img src="portraits/gong.png"/>
-					<span class="name">Gong</span>
 					<div class="class"><span>Monk (MONK) → Master Monk (MMNK)</span></div>
-					<div class="description"><span>Gong is the first optional character in the game. If you are playing with no glitches or exploits, he's the first character you can miss. You can get him on your team if you talk to him outside his hut (Gong's hut) just East of the Gate of the Anceients in Guardiana. If you excape from your first battle, you can have him in your first battle. Otherwise, get him after the first battle, and before the second. I love Gong. He's able to heal, and can simultaneously heal people, and in his later levels, you shouldn't have too much of a MP issue, though early on it can be a bit low. I always suggest Gong. Since you can keep him on the front lines, he's always nearby when someone needs healing. And you shouldn't have any issue keeping up in levels, since he can also gain from fighting and not just healing. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -495,12 +495,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- GORT -->
+				<div class="fancyBorder character"> <!-- GORT -->
 					<div class="linkLoc" id="gort"></div>
+					<div class="name"><span>Gort</span></div>
 					<img src="portraits/gort.png"/>
-					<span class="name">Gort</span>
 					<div class="class"><span>Warrior (WARR) → Gladiator (GLDT)</span></div>
-					<div class="description"><span>Gort is another optional character. If you are a big explorer, he's hard to miss. But if you just push through the game, ignoring the non-battle segments, you'll probably go the whole game without ever having got him. If you want to get him, you'll need to find him after the 2nd battle. He's sitting in the bar in Gaurdiana. The bar is on the East side of town, North-East from the shop. He starts better the Luke, and isn't bad. I find him really useful, due to his tendency to take little damage from mechanical enemies. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -541,12 +541,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- MAE -->
+				<div class="fancyBorder character"> <!-- MAE -->
 					<div class="linkLoc" id="mae"></div>
+					<div class="name"><span>Mae</span></div>
 					<img src="portraits/mae.png"/>
-					<span class="name">Mae</span>
 					<div class="class"><span>Knight (KNT) → Paladin (PLDN)</span></div>
-					<div class="description"><span>Mae is the daughter of your trainer Varios. You can meet her before the first battle, but she won't join until after the second. You can't miss her. She is better than Ken. While Ken gets more HP, she compensates by getting tons of DEF. She becomes a tank if you are careful. I suggest you use her as one of your centaurs. Sure, her movement sucks in forest and on mountains, but she can take so much damage. Her HP rises really well later in the game, though early on you'll want to keep an eye on her where there are lots of magic casters. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -587,12 +587,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- KHRIS -->
+				<div class="fancyBorder character"> <!-- KHRIS -->
 					<div class="linkLoc" id="khris"></div>
+					<div class="name"><span>Khris</span></div>
 					<img src="portraits/khris.png"/>
-					<span class="name">Khris</span>
 					<div class="class"><span>Healer (HEAL) → Vicar (VICR)</span></div>
-					<div class="description"><span>Khris is the final character you can get in Chapter 1. After getting thrown in the Alterone prison, she helps you escape, joining the force. If you look around before getting thrown in jail, you'll find that her mom is looking for her. Khris is an average healer, but I find it way to easy to completely lsoe her. Leave her out of a battle or two, fail to keep her busy, and you'll spend the next few battles making sure she isn't too far behind. She'll end up with good MP. And has a decent variety of spells, nonetheless, I find her a pain to use. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -666,12 +666,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- ANRI -->
+				<div class="fancyBorder character"> <!-- ANRI -->
 					<div class="linkLoc" id="anri"></div>
+					<div class="name"><span>Anri</span></div>
 					<img src="portraits/anri.png"/>
-					<span class="name">Anri</span>
 					<div class="class"><span>Mage (MAGE) → Wizard (WIZD)</span></div>
-					<div class="description"><span>Anri is the the King of Guardiana's daughter, and she is in the mage school of Mariana. While she first is hesitant to join you, as she must grieve her father's death, if you go find her after she runs off, she'll join the force. Anri is the 2nd mage you encounter and is largely preferrable to Tao, as Anri learns Freeze. She'll learn all the way to leave 4, which deals massive damage to a single opponenet. I largely prefer her to Tao. Tao learns a better variety of attack spells, and is, as a result, more usuable in my runs. She learns up to level 2 in blaze and bolt, and level 4 freeze. As a result, she has 2 levels of blaze available for early on undead enemies. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -745,12 +745,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- ARTHUR -->
+				<div class="fancyBorder character"> <!-- ARTHUR -->
 					<div class="linkLoc" id="arthur"></div>
+					<div class="name"><span>Arthur</span></div>
 					<img src="portraits/arthur.png"/>
-					<span class="name">Arthur</span>
 					<div class="class"><span>Knight (KNT) → Paladin (PLDN)</span></div>
-					<div class="description"><span>Arthur is a unique character. He's found in the mage school, Mariana. He's found washing laundry on one of the upper of levels of the building. Though you can talk to him before Battle 2-2, he won't join you until after. Arthur is unique because he is the only knight that can learn magic spells. Learning blaze, freeze, and bolt all to level 1, this allows him to deal some magic damage if needed. While this can be useful in early levels, and perhaps later, once he has bolt 1, he'll eventually outgrow the spells, doing more damage without than with, making them all around useless. I never really use Arthur, he's just too much of a pain to build up. He starts ridiculously low, and takes forever to catch him up. Furthermore his stats start low and slow. If you do catch him up though, I hear he can be one of the best knights in the game. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -821,12 +821,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- BALBAROY -->
+				<div class="fancyBorder character"> <!-- BALBAROY -->
 					<div class="linkLoc" id="balbaroy"></div>
+					<div class="name"><span>Balbaroy</span></div>
 					<img src="portraits/balbaroy.png"/>
-					<span class="name">Balbaroy</span>
 					<div class="class"><span>Birdman (BDMN) → Sky Warrior (SKYW)</span></div>
-					<div class="description"><span>Balbaroy is the first birdman you'll meet in the game. You'll first find him in Shaddey Abbey, being used as bait for an ambush. He's the first character other than max that can use most swords. Furthermore, he can fly. Due to his flying taking away his land bonuses, he can take lots of damage if you aren't careful, but leveled up properly, and he'll be an invaluable member of the team. I've used Balbaroy. But he takes more damage than I like, making him harder to use than many other characters. It doesn't help that the first battle you can use him in, the enemies most accessible enemies can, and will, one shot him. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -867,12 +867,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- AMON -->
+				<div class="fancyBorder character"> <!-- AMON -->
 					<div class="linkLoc" id="amon"></div>
+					<div class="name"><span>Amon</span></div>
 					<img src="portraits/amon.png"/>
-					<span class="name">Amon</span>
 					<div class="class"><span>Birdman (BDMN) → Sky Warrior (SKYW)</span></div>
-					<div class="description"><span>Amon joins almost immediately after Balbaroy. You first can talk with her on your way into Shade Abbey. She'll ask that you save Balbaroy, stating that he'll die without your help. She comes with Balbaroy, as a gift for saving Balbaroy. Same idea, flying sword swinger. She doesn't have any particular advantages over Balbaroy, maybe just a little defense. I keep away. Just like Balbaroy, she is usable, but really takes too much damage, to easily. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -913,12 +913,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- DIANE -->
+				<div class="fancyBorder character"> <!-- DIANE -->
 					<div class="linkLoc" id="diane"></div>
+					<div class="name"><span>Diane</span></div>
 					<img src="portraits/diane.png"/>
-					<span class="name">Diane</span>
 					<div class="class"><span>Archer (ACHR) → Sniper (SNIP)</span></div>
-					<div class="description"><span>Diane is another archer, like Hans. You can find her in Bustoke (The mountain town), in a house near the top left corner of the town. She has good stats for her level, and is pretty well leveled on joining. Nonetheless, if Hans is leveled well too, it makes sense to choose one or the other here. As an archer, she eventually it able to attack from 3 spaces away, and for this alone, I suggest getting an archer, though I don't recommend Diane if you've level Hans properly. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -956,12 +956,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char1"> <!-- ZYLO -->
+				<div class="fancyBorder character"> <!-- ZYLO -->
 					<div class="linkLoc" id="zylo"></div>
+					<div class="name"><span>Zylo</span></div>
 					<img src="portraits/zylo.png"/>
-					<span class="name">Zylo</span>
 					<div class="class"><span>Werewolf (WRWF) → Wolf Baron (WFBN)</span></div>
-					<div class="description"><span>Zylo is a the werewolf posioned by Runefaust, which sent him into a state of pyschosis. To get him to join you, you need to use the Lunar Dew on him, which you can get from the quarry. Zylo is a great character, he's can do great amounts of damage, and has real great movement range. I always use Zylo. He has the highest max damage of any character and is minimally affected by terrain limitations. Furthermore, since he takes no weapon, he has 4 inventory slots for whatever you want him to carry. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -986,12 +986,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- PELLE -->
+				<div class="fancyBorder character"> <!-- PELLE -->
 					<div class="linkLoc" id="pelle"></div>
+					<div class="name"><span>Pelle</span></div>
 					<img src="portraits/pelle.png"/>
-					<span class="name">Pelle</span>
 					<div class="class"><span>Knight (KNT) → Paladin (PLDN)</span></div>
-					<div class="description"><span>Pelle is a mercenary who once worked for Runefaust. He decides he no longer wishes to be part of them at the beginning of the Laser Eye battle. In response to his change of mind, a silver knight pushses him off the cliff. He luckily grabs onto a branch on the way down, and he joins you after the battle. Pelle seems like a great decision. He has high stats, and grows quickly. This is faulty though, since he starts good, and only gets worse. While he has the best of stats while Lv.10, 11, or 12, once he gets up there, he levels off, making him one of the weaker centaurs. I never really use him. By the time I get him, Mae or Ken are pretty high up there - and it's not encouraging to know he'll get worse over time, and won't be any good late game. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1032,12 +1032,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char1"> <!-- JOGURT -->
+				<div class="fancyBorder character"> <!-- JOGURT -->
 					<div class="linkLoc" id="jogurt"></div>
+					<div class="name"><span>Jogurt</span></div>
 					<img src="portraits/jogurt.png"/>
-					<span class="name">Jogurt</span>
 					<div class="class"><span>Yogurt (YGRT)</span></div>
-					<div class="description"><span>Arguably the best charater in the game. He comes ready to promote and with as high stats as he'll ever get - the only way to increase them is using items like the bread of life or the power potion. Jogurt is one of the hidden charaters, first encountered at Gong's Hut in Chapter 1. He can be found a second time in Bustoke at some point, though he won't join the force until Chapter 4, where he is hiding just north west of the church after Pao leaves the first time. For details on how to get Jorgurt, see the secrets page. I find Jogurt as an indespensible part of every team. He acts as the games mascot, and every kill he makes causes the Jorgurt Ring to be dropped. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1055,12 +1055,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- KOKICHI -->
+				<div class="fancyBorder character"> <!-- KOKICHI -->
 					<div class="linkLoc" id="kokichi"></div>
+					<div class="name"><span>Kokichi</span></div>
 					<img src="portraits/kokichi.png"/>
-					<span class="name">Kokichi</span>
 					<div class="class"><span>Wing Knight (WKNT) → Sky Lord (SKYL)</span></div>
-					<div class="description"><span>A unique character for sure. Kokichi is a optional character, and fills the role of a flying knight. He can use spears and lances like all other knights, and flys, therefore making him ignore land effect. Being the only flying knight, Kokichi fills a unique spot in the game. Most knights are centaurs, and as such recieve high land effects in mountains and forest. His ability to quickly move around even in high land effects, makes he a mobile knight. I don't really use him. Not because he is bad, but because leveling him up is a bit difficult, though if you level him properly, he can be all around quite good. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1101,12 +1101,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- VANKAR -->
+				<div class="fancyBorder character"> <!-- VANKAR -->
 					<div class="linkLoc" id="vankar"></div>
+					<div class="name"><span>Vankar</span></div>
 					<img src="portraits/vankar.png"/>
-					<span class="name">Vankar</span>
 					<div class="class"><span>Knight (KNT) → Paladin (PLDN)</span></div>
-					<div class="description"><span>Vankar is another Centaur. Nothing really special. You can grab him after Pao leaves the first time. If you wander around in the fields you'll find him standing around. If you bother to keep him up with the force, he'll end up mid-tier in almost all his stats, excelling in no category. But, if you need another centaur, he's there. Additionally, he comes just in time for most effortless grind for range characters in the game (at the end of the chapter). I personally don't use him, I have other better lance users, and I really dislike centaurs because of their movement restrictions. But, I would use him over Ken every time. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1147,12 +1147,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- GUNTZ -->
+				<div class="fancyBorder character"> <!-- GUNTZ -->
 					<div class="linkLoc" id="guntz"></div>
+					<div class="name"><span>Guntz</span></div>
 					<img src="portraits/guntz.png"/>
-					<span class="name">Guntz</span>
 					<div class="class"><span>Steam Knight (SKNT) → Steam Baron (SBRN)</span></div>
-					<div class="description"><span>A special character, Guntz is another unique class character. He is another knight, using lances and spears, but ignores lots of land effect penalties that the centaurs face. He's found in the 2nd Pao, in the sheep pen. Talk to hin, and he'll join the force. Guntz is a beast when it comes to defense. He gets it in loads, often ending with the best defense of anyone on the force. While he lacks in little in the HP department, his defense easily compensates. He also gets great attack. But, with a movement of only 4, I suggest giving him the Mobility Ring I always use Guntz. His massive defense and great attack means he can face late game enemies with easy. And you get him in time for the most effortless EXP grind for range characters (at the end of this chapter). I always suggest using him. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1193,12 +1193,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- DOMINGO -->
+				<div class="fancyBorder character"> <!-- DOMINGO -->
 					<div class="linkLoc" id="domingo"></div>
+					<div class="name"><span>Domingo</span></div>
 					<img src="portraits/domingo.png"/>
-					<span class="name">Domingo</span>
 					<div class="class"><span>Magic Creature (MGCR)</span></div>
-					<div class="description"><span>Domingo is yet another distinctive character. Arguably another mascot for the game in fact. He is obtained by finding the Domingo Egg from the fake monster in Manarina (Chapter 2). The bringing the egg to a scientist in the shop of the 2nd Pao. He'll heat the egg, causing it to hatch. And you'll get Domingo, another must have character. Domingo is another mage, focusing mainly on the freeze series. Though he'll learn a few other various spells. He joins the force at Lv. 1, but since he can't be promoted, this can be assumed as Lv. 1, post-promotion. Due to being a magic user, he can gain levels rather quickly, and his over all great defense later on makes him a great asset. Being the only mage to gain decent defense puts Domingo in a unique position, and his floating abiltiy gives him better movement than most other characters. I always use Domingo, he's great. As soon as I get him, I'll drop Anri, because I find Domingo to be a better Freeze mage. Growing better in all his stats, and not needing constant protection due to low DF. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1253,12 +1253,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- EARNEST -->
+				<div class="fancyBorder character"> <!-- EARNEST -->
 					<div class="linkLoc" id="earnest"></div>
+					<div class="name"><span>Earnest</span></div>
 					<img src="portraits/earnest.png"/>
-					<span class="name">Earnest</span>
 					<div class="class"><span>Knight (KNT) → Paladin (PLDN)</span></div>
-					<div class="description"><span>Earnest is again, another centaur. Nothing usper great about him. You first meet him in Pao, where you learn he's determined to get revenge on Balbazak. And he joins the force right before the battle with Balbazak. He's really not that bad, but not that good either. I don't find him excelling in any stats and you already have plenty of centaurs by now. Nonetheless, you do get him in time for the most effortless EXP grind for ranged characters (the next battle). So if you want to use him, you easily can get him leveled up to snuff. I don't really use him. It's not because I think he's bad, I just already centaurs on my team, and don't have a space available. But, I have subbed him in, as he is very usable. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1299,12 +1299,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- LYLE -->
+				<div class="fancyBorder character"> <!-- LYLE -->
 					<div class="linkLoc" id="lyle"></div>
+					<div class="name"><span>Lyle</span></div>
 					<img src="portraits/lyle.png"/>
-					<span class="name">Lyle</span>
 					<div class="class"><span>Assault Knight (ASKT) → Stike Knight (SKNT)</span></div>
-					<div class="description"><span>Lyle is found in Rudo. He's got the trait of being a centaur archer. Which is interesting. He's got the movement of a centaur, while also being able to equip archer weapons. Often times he makes a good replacement for Diane or Hans, since he is often better than them at the time of joining. He grows all around decently, but ends a little low in all his stats, except an ok attack. This would be worse if he didn't have great range with his weapons. Overall, he's a fine archer, if you don't mind him being a centaur. I don't really use him. I like my archers not having movement penalties in forest, so a centaur archer is exactly not what I want. And he comes too late for the effortless EXP grind. Overall not my type of character. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1342,12 +1342,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char1"> <!-- BLEU -->
+				<div class="fancyBorder character"> <!-- BLEU -->
 					<div class="linkLoc" id="bleu"></div>
+					<div class="name"><span>Bleu</span></div>
 					<img src="portraits/bleu.png"/>
-					<span class="name">Bleu</span>
 					<div class="class"><span>Dragon (DRGN) → Great Dragon (GRDR)</span></div>
-					<div class="description"><span>Bleu is a great dragon found in Dragonia. He's really only a baby, but he's descended from the Sacred Dragons. Unfortunately he's the last of his kind, the only Sacred Dragon left. Bleu sucks when you get him. He's one of the worst characters in the game at the time of joining. This isn't helped by the difficulty of the immediately following battle. But, if you level him up (quickly), he's great. He's a goddamn dragon! How could you expect anything less when leveled up. I never use him, because I don't got the time to level him up, cause he's so far behind when you get him. I know he'd be great if I had that time, but I don't. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1372,12 +1372,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- MUSASHI -->
+				<div class="fancyBorder character"> <!-- MUSASHI -->
 					<div class="linkLoc" id="musashi"></div>
+					<div class="name"><span>Musashi</span></div>
 					<img src="portraits/musashi.png"/>
-					<span class="name">Musashi</span>
 					<div class="class"><span>Samurai (SMR)</span></div>
-					<div class="description"><span>When you get to the town of Prompt, you can get this secret character. You'll need to find a house with 2 doors, and between them is a sign. Read the sign and he'll join the force. Musashi is great. He is amazing when he joins and stay great till the end. Without a doubt he's one of the best characters in the game. If I don't accidentally miss getting him, I use him. His defense is great, his health is great. His attack is great, and so his his agility. He ends with high stats all around, making him absolutely amazing. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1404,12 +1404,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- ALEF -->
+				<div class="fancyBorder character"> <!-- ALEF -->
 					<div class="linkLoc" id="alef"></div>
+					<div class="name"><span>Alef</span></div>
 					<img src="portraits/alef.png"/>
-					<span class="name">Alef</span>
 					<div class="class"><span>Mage (MAGE) → Wizard (WIZD)</span></div>
-					<div class="description"><span>Alef is a female half-fox spellcaster. She left Prompt with Torasu to stop Darksol at the Tower of the Ancients. But they aren't able to do it own their own, and need your help. After finishing the battles on the Tower, she'll join your party. A pretty good spellcaster, she's the bolt caster. Meaning she'll learn all the way up to Bolt 4, the most powerful spell in the game. She also learn a variety of other attack spells, though none as well as bolt. She ends with high MP, and low everything else. I have tried to use her, and have succeeded for a couple battles, but I find her DF and HP are too low. I can't rely on her not being killed, so she's usually left off the team.</span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1483,12 +1483,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- TORASU -->
+				<div class="fancyBorder character"> <!-- TORASU -->
 					<div class="linkLoc" id="torasu"></div>
+					<div class="name"><span>Torasu</span></div>
 					<img src="portraits/torasu.png"/>
-					<span class="name">Torasu</span>
 					<div class="class"><span>Healer (HEAL) → Vicar (VICR)</span></div>
-					<div class="description"><span>Torasu is a male human halfling. He's another healer. He left Prompt with Alef to stop Darksol at the Tower of the Ancients. But they aren't able to do it own their own, and need your help. After finishing the battles on the Tower, he'll join your party. He's an ok healer. But by now, you probably have better options, either Lowe or Gong. Nonetheless he's the only healer to learn Aura level 4, which heals the entire party. If you want this spell, he's going to be a must have. I generally keep away, because he's too low level upon joining, and I don't want to take the time to level him up. And, since he ends with low stats in everything but MP, I don't see the point in keeping him. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1562,12 +1562,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char1"> <!-- ADAM -->
+				<div class="fancyBorder character"> <!-- ADAM -->
 					<div class="linkLoc" id="adam"></div>
+					<div class="name"><span>Adam</span></div>
 					<img src="portraits/adam.png"/>
-					<span class="name">Adam</span>
 					<div class="class"><span>Robot (RBT) → Cyborg (CYBG)</span></div>
-					<div class="description"><span>Adam is a sentinel in Metapha who awaits the hero who will create the Chaos Breaker. He joins right before the fight with Chaos. He's really far behind when you get him, and given the immediately following battle, is a pain to get caught up. Which is a shame, because he ends real good if you level him up. With great defenese, and attack. And not bad HP either. I don't use him, because I don't want to put in the effort. It's too late in the game for me to take the time leveling him up, even if he become one of the best characters at the end. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
@@ -1592,12 +1592,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="fancyBorder character char2"> <!-- HANZOU -->
+				<div class="fancyBorder character"> <!-- HANZOU -->
 					<div class="linkLoc" id="hanzou"></div>
+					<div class="name"><span>Hanzou</span></div>
 					<img src="portraits/hanzou.png"/>
-					<span class="name">Hanzou</span>
 					<div class="class"><span>Ninja (NINJ)</span></div>
-					<div class="description"><span>Hanzou is found in Chapter 8, by searching in the bushes on the right side of town. He's another hidden character like Musashi, though he doesn't get quite as good. Regardless, level him up, and he's great. He joins pretty well rounded, not being a monster in anything, and lackign only a little in agility. But let him level a bit, and he'll fit in great with the rest of the force. I use him sporadically. If anyone on my force is severly lacking, I'll drop them in place of Hanzou, but if I've got a strong force already, I'll leave Hanzou in the reserves. </span></div>
+					<div class="description"><span>Description</span></div>
 					<table class="stats">
 						<tr>
 							<td></td>
