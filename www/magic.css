@@ -1,82 +1,77 @@
 #list{
 	position:relative;
-	left:calc(50% - 170px);
-	padding:5px;
+	left:50%;
+	transform:translate(calc(-50% - 6px) ,0%);
 
-	text-align:center;	
-	width:300px;
+	max-width:450px;
 }
 #list img{
-	width:60px;
-	
+	width:100%;
+}
+#list td{
+	width:9.5%;
 }
 
-@media (max-width: 600px){
-	
+.tableSpace{
+	width:5% !important;	
 }
-tr{
+
+.details{
+	position:relative;
+	top:20px;
+}
+.details img{
+	width:40px;
+}
+.details td{
+	padding-left:15px;
 	text-align:center;
 }
-.details table tbody tr td img{
-	width:60px;
+.details a{
+	height:100%;
+	width:100%;
 }
+.details th{
+	padding-left:15px;
+}
+
+.details table{
+	position:relative;
+	left:50%;
+	transform:translate(calc(-50% - 6px), 0%);
+}
+
 .details{
-        position:relative;
-        left:50%;
-	top:20px;
-        transform:translate(-50%, 0%);
+	position:relative;
+	left:50%;
+	transform:translate(-50%, 0%);
 
-        max-width:900px;
+	max-width:900px;
 }
 
+@media only screen and (max-width:640px){
+	.details table td:nth-child(3){
+		display:none;
+	}
+	.details table th:nth-child(3){
+		display:none;
+	}
+}
 
-@media only screen and (max-width:550px){
-        .details table td:nth-child(7){
+@media only screen and (max-width:570px){
+        .details table td:nth-child(5){
                 display:none;
         }
-        .details table th:nth-child(7){
+        .details table th:nth-child(5){
                 display:none;
         }
 }
 
-@media only screen and (max-width:490px){
+@media only screen and (max-width:360px){
         .details table td:nth-child(6){
                 display:none;
         }
         .details table th:nth-child(6){
-                display:none;
-        }
-}
-@media only screen and (max-width:405px){
-        .details table td:nth-child(2){
-                display:none;
-        }
-        .details table th:nth-child(2){
-                display:none;
-        }
-
-	#list img{
-	        width:30px;
-	}
-	#list{
-		width:150px;
-		left: calc(50% - 90px);
-	}
-
-}
-@media only screen and (max-width:330px){
-        .details table td:nth-child(3){
-                display:none;
-        }
-        .details table th:nth-child(3){
-                display:none;
-        }
-}
-@media only screen and (max-width:310px){
-        .details table td:nth-child(4){
-                display:none;
-        }
-        .details table th:nth-child(4){
                 display:none;
         }
 }

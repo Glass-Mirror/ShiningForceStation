@@ -4,14 +4,14 @@
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width,initial-scale=1">
                 <link rel="stylesheet" type="text/css" href="general.css"/>
-                <link rel="stylesheet" type="text/css" href="magic.css"/>
+		<link rel="stylesheet" type="text/css" href="magic.css"/>
                 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
                 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
                 <script src="header.js"></script>
-		<script src="magic.js"></script>
+				<script src="magic.js"></script>
                 <title>Magic</title>
         </head>
-        <body onLoad="onLoad()">
+        <body onload="onLoad()">
 		<div class="fancyBorder" id="header">
 			<a href="/">
 				<img src="logo.png" height="100%"/>
@@ -24,13 +24,13 @@
                                 <td><a href="items.html">Items</a></td>
                                 <td><a href="secrets.html">Secrets</a></td>
                                 <td><a href="about.html">About</a></td>
-                        </tr></table>
+            </tr></table>
 			<table id="mobileNav">
-                                <tr><td id="mobileNavButton" onclick="toggleMobileNavLinks()">
-                                        <img src="img/nav.png"/>
-                     		</td></tr>
-                                <tr><td>
-                                        <table id="mobileNavLinks" class="fancyBorder">
+                <tr><td id="mobileNavButton" onclick="toggleMobileNavLinks()">
+                    <img src="img/nav.png"/>
+                </td></tr>
+                <tr><td>
+                    <table id="mobileNavLinks" class="fancyBorder">
 						<tr><td><a href="guide.html">Guide</a></td></tr>
 						<tr><td><a href="characters.html">Characters</a></td></tr>
 						<tr><td><a href="magic.html">Magic</a></td></tr>
@@ -52,19 +52,19 @@
 					<td><a href="#aura"><img src="img/aura.png" alt="Aura"/></a></td>
 				</tr>
 				<tr>
-                                        <td><a href="#blaze"><img src="img/blaze.png" alt="Blaze"/></a></td>
-                                        <td><a href="#freeze"><img src="img/freeze.png" alt="Freeze"/></a></td>
-                                        <td><a href="#bolt"><img src="img/bolt.png" alt="Bolt"/></a></td>
-                                        <td><a href="#desoul"><img src="img/desoul.png" alt="Desoul"/></a></td>
-                                        <td><a href="#muddle"><img src="img/muddle.png" alt="Muddle"/></a></td>
-                                </tr>
+                    <td><a href="#blaze"><img src="img/blaze.png" alt="Blaze"/></a></td>
+                    <td><a href="#freeze"><img src="img/freeze.png" alt="Freeze"/></a></td>
+                    <td><a href="#bolt"><img src="img/bolt.png" alt="Bolt"/></a></td>
+                    <td><a href="#desoul"><img src="img/desoul.png" alt="Desoul"/></a></td>
+                    <td><a href="#muddle"><img src="img/muddle.png" alt="Muddle"/></a></td>
+                </tr>
 				<tr>
-                                        <td><a href="#boost"><img src="img/boost.png" alt="Boost"/></a></td>
-                                        <td><a href="#shield"><img src="img/shield.png" alt="Shield"/></a></td>
-                                        <td><a href="#quick"><img src="img/quick.png" alt="Quick"/></a></td>
-                                        <td><a href="#slow"><img src="img/slow.png" alt="Slow"/></a></td>
-                                        <td><a href="#sleep"><img src="img/sleep.png" alt="Sleep"/></a></td>
-                                </tr>
+                    <td><a href="#boost"><img src="img/boost.png" alt="Boost"/></a></td>
+                    <td><a href="#shield"><img src="img/shield.png" alt="Shield"/></a></td>
+                    <td><a href="#quick"><img src="img/quick.png" alt="Quick"/></a></td>
+                    <td><a href="#slow"><img src="img/slow.png" alt="Slow"/></a></td>
+                    <td><a href="#sleep"><img src="img/sleep.png" alt="Sleep"/></a></td>
+                </tr>
 			</table>
 			<div class="details">
 				<table class="fancyBorder">
@@ -88,7 +88,7 @@
 							<td>0</td>
 							<td>□</td>
 						</tr>
-                                                <tr id="heal" class="linkLoc"></tr>
+                        <tr id="heal" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/heal.png"/></td>
 							<td>Heal</td>
@@ -98,7 +98,7 @@
 							<td>1<br>2<br>3<br>1</td>
 							<td>□<br>□<br>□<br>□</td>
 						</tr>
-                                                <tr id="detox" class="linkLoc"></tr>
+                        <tr id="detox" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/detox.png"/></td>
 							<td>Detox</td>
@@ -108,7 +108,7 @@
 							<td>1</td>
 							<td>□</td>
 						</tr>
-                                                <tr id="dispel" class="linkLoc"></tr>
+                        <tr id="dispel" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/dispel.png"/></td>
 							<td>Dispel</td>
@@ -118,7 +118,7 @@
 							<td>2</td>
 							<td>□</td>
 						</tr>
-                                                <tr id="aura" class="linkLoc"></tr>
+                        <tr id="aura" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/aura.png"/></td>
 							<td>Aura</td>
@@ -128,7 +128,7 @@
 							<td>3<br>3<br>3<br>0</td>
 							<td>+<br>◇<br>◇<br>All</td>
 						</tr>
-                                                <tr id="blaze" class="linkLoc"></tr>
+                        <tr id="blaze" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/blaze.png"/></td>
 							<td>Blaze</td>
@@ -138,7 +138,7 @@
 							<td>2<br>2<br>2<br>2</td>
 							<td>□<br>+<br>+<br>□</td>
 						</tr>
-                                                <tr id="freeze" class="linkLoc"></tr>
+                        <tr id="freeze" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/freeze.png"/></td>
 							<td>Freeze</td>
@@ -148,7 +148,7 @@
 							<td>2<br>2<br>3<br>3</td>
 							<td>□<br>+<br>+<br>□</td>
 						</tr>
-                                                <tr id="bolt" class="linkLoc"></tr>
+                        <tr id="bolt" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/bolt.png"/></td>
 							<td>Bolt</td>
@@ -158,7 +158,7 @@
 							<td>2<br>3<br>3<br>3</td>
 							<td>+<br>+<br>◇<br>□</td>
 						</tr>
-                                                <tr id="desoul" class="linkLoc"></tr>
+                        <tr id="desoul" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/desoul.png"/></td>
 							<td>Desoul</td>
@@ -168,7 +168,7 @@
 							<td>2</td>
 							<td>□</td>
 						</tr>
-                                                <tr id="muddle" class="linkLoc"></tr>
+                        <tr id="muddle" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/muddle.png"/></td>
 							<td>Muddle</td>
@@ -178,59 +178,59 @@
 							<td>2</td>
 							<td>□</td>
 						</tr>
-                                                <tr id="boost" class="linkLoc"></tr>
+                        <tr id="boost" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/boost.png"/></td>
 							<td>Boost</td>
-                                                        <td>1</td>
-                                                        <td>15</td>
+                            <td>1</td>
+                            <td>15</td>
 							<td>Increase ATT by ~15</td>
 							<td>3</td>
 							<td>□</td>
 						</tr>
-                                                <tr id="shield" class="linkLoc"></tr>
+                        <tr id="shield" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/shield.png"/></td>
 							<td>Shield</td>
-                                                        <td>1</td>
-                                                        <td>5</td>
+                            <td>1</td>
+                            <td>5</td>
 							<td>Resist all magic</td>
 							<td>1</td>
 							<td>□</td>
 						</tr>
-                                                <tr id="quick" class="linkLoc"></tr>
+                        <tr id="quick" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/quick.png"/></td>
 							<td>Quick</td>
-                                                        <td>1<br>2</td>
-                                                        <td>5<br>16</td>
+                            <td>1<br>2</td>
+                            <td>5<br>16</td>
 							<td>⇧ DEF & AGI by ~5<br>⇧ DEF & AGI by ~10</td>
 							<td>2<br>2</td>
 							<td>□<br>+</td>
 						</tr>
-                                                <tr id="slow" class="linkLoc"></tr>
+                        <tr id="slow" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/slow.png"/></td>
 							<td>Slow</td>
-                                                        <td>1<br>2</td>
-                                                        <td>5<br>20</td>
+                            <td>1<br>2</td>
+                            <td>5<br>20</td>
 							<td>⇩ DEF & AGI by ~5<br>⇩ DEF & AGI by ~10</td>
 							<td>2<br>2</td>
 							<td>□<br>+</td>
 						</tr>
-                                                <tr id="sleep" class="linkLoc"></tr>
+                        <tr id="sleep" class="linkLoc"></tr>
 						<tr>
 							<td><img src="img/sleep.png"/></td>
 							<td>Sleep</td>
-                                                        <td>1</td>
-                                                        <td>6</td>
+        	                <td>1</td>
+                            <td>6</td>
 							<td>Target falls asleep</td>
 							<td>1</td>
 							<td>□</td>
 						</tr>
 					</tbody>
 				</table>
-                        </div>
+            </div>
 		</div>
 	</body>
 </html>
