@@ -8,9 +8,6 @@
 #list img{
 	width:calc(100%-12*6);
 }
-#list td{
-	width:16.6%;
-}
 
 .linkLoc{
 	top:-100px;
@@ -34,28 +31,35 @@
 	max-width: 350px;
 }
 .character table img{
-	width:40px;
+	width: 40px;
 }
 
 
 
 
 @media only screen and (max-width:1299px){
+	.description{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
 	.stats{
 		margin-left:auto; 
 		margin-right:auto;
 		margin-top:30px;
+		margin-bottom: 15px;
 	
 	}
 	.weapons{
 		margin-left:auto; 
 		margin-right:auto;
 		margin-top:30px;
+		margin-bottom: 15px;
 	}
 	.spells{
 		margin-left:auto; 
 		margin-right:auto;
-		margin-top:30px;
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -101,5 +105,32 @@
 
 	.noWeap .spells{
 		top:-600px;
+	}
+}
+
+@media only screen and (max-width:470px){
+	.weapons td:nth-child(1){
+		display: none;
+	}
+
+	.stats td:nth-child(1){
+		display: none;
+	}
+
+	
+}
+
+@media only screen and (max-width:370px){
+	.character table img{
+		width: 10vw;
+	}
+
+	
+	#list img{
+		width:99%;
+		box-shadow: none;
+		border: none;
+		margin: 0px;
+        box-sizing: none;
 	}
 }
