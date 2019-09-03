@@ -1,42 +1,53 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="header.css">
-		<link rel="stylesheet" type="text/css" href="about.css">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<title>About</title>
-	</head>
-	<body>
-		<div id="headerDiv">
-			<div>
-				<a href="/">
-					<img src="logo.png" height="60px"/>
-				</a>
-			</div>
-			<table><tr>
-				<td><a href="guide.html">Guide</a></td>
-				<td><a href="characters.html">Characters</a></td>
-				<td><a href="magic.html">Magic</a></td>
-				<td><a href="weapons.html">Weapons</a></td>
-				<td><a href="items.html">Items</a></td>
-				<td><a href="secrets.html">Secrets</a></td>
-				<td><a href="about.html">About</a></td>
-			</tr></table>
+        <head>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="general.css"/>
+			<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+			<script src="header.js"></script>
+            <title>About</title>
+        </head>
+        <body onload="onLoad()">
+		<div class="fancyBorder" id="header">
+			<a href="/">
+				<img src="logo.png" height="100%"/>
+			</a>
+			<table id="desktopNav"><tr>
+            	<td><a href="guide.html">Guide</a></td>
+                <td><a href="characters.html">Characters</a></td>
+                <td><a href="magic.html">Magic</a></td>
+                <td><a href="weapons.html">Weapons</a></td>
+                <td><a href="items.html">Items</a></td>
+                <td><a href="secrets.html">Secrets</a></td>
+                <td><a href="about.html">About</a></td>
+            </tr></table>
+			<table id="mobileNav">
+                <tr><td id="mobileNavButton" onclick="toggleMobileNavLinks()">
+                    <img src="img/nav.png"/>
+                </td></tr>
+                <tr><td>
+                    <table id="mobileNavLinks" class="fancyBorder">
+						<tr><td><a href="guide.html">Guide</a></td></tr>
+						<tr><td><a href="characters.html">Characters</a></td></tr>
+						<tr><td><a href="magic.html">Magic</a></td></tr>
+						<tr><td><a href="weapons.html">Weapons</a></td></tr>
+						<tr><td><a href="items.html">Items</a></td></tr>
+						<tr><td><a href="secrets.html">Secrets</a></td></tr>
+						<tr><td><a href="about.html">About</a></td></tr>
+					</table>
+				</td></tr>
+			</table>
 		</div>
-		<div id="headerSpacer"></div>
-		<div id="mainDiv">
-			<!-- Current Notice -->
-			<div class="fancyBorder"><div><div><div>
+		<div id="content">
+			<div class="fancyBorder">
 				<p>
 					This site is current a work in progress.  First
 					published on 2018/3/24.
 				</p>
-			</div></div></div></div>
-			<!-- About Me -->
-			<!-- About Site -->
-			<div class="fancyBorder"><div><div><div>
+			</div><br />
+			<div class="fancyBorder">
 				<p>
 					The purpose of Shining Force Station is to provide an easy
 					place to go to for your Shining Force needs.
@@ -48,33 +59,36 @@
 					they have issues with their webhosts, preventing them
 					from hosting certain types of content.  This is not a problem
 					for me, since I am my own host.
-				</p>
-			</div></div></div></div>
-			<!-- About Me -->
-			<div class="fancyBorder"><div><div><div>
-				<p>
-					I'm a high school senior heading off to Arizona State
-					University next year.  I'm really interested in computer
-					science in general, and more specifically web development.
-				</p>
-				<p>
-					I've been meaning to get myself a server and domain name to
-					host and utilize for a while, but have been having an issue
-					on deciding what to use it for.  Nonetheless, I bought myself
-					a computer to run a server from, and got this domain name.
-				</p>
-				<p>
-					Eventually I hope to have completed this site, allowing it to
-					serve as a guide of Shining Force.  Eventually I intend to
-					write a browser based version of Shining Force, but that is 
-					much further in the future.
-				</p>
-				<br>
-				<p>
-					If you need to contact me, I can be contacted at <br>
-					thomasnordman.me@gmail.com
-				</p>
-			</div></div></div></div>
+				</p>	
+			</div><br />
+			<div class="fancyBorder">
+					<p>
+						I'm currently a college student at Arizona State University.  
+						specifically, I'm working toward a Computer Science degree, 
+						with a concentration in cybersecurity.
+					</p>
+					<p>
+						This site has largely been a passion project.  I loved this game 
+						as a kid, we had it on out Sega Genesis that we kept in the 
+						basement, and I was constantly playing it.  Since then, I've 
+						been able to continue playing using virtual consoles, like on 
+						the Nintendo Wii and on Steam.  And, so, I've made this site to 
+						help share a game that I love and enjoy, helping people learn 
+						about it and giving them resources for their own playthroughs.
+					</p>
+					<p>
+						As I said though, this site is currently under construction, meaning 
+						there will be times when it goes down for extended periods of time.  
+						Also as I am creating this site based on both my knowledge and that 
+						which I can find online, it is likely there will be some errors, 
+						in which case, please let me know so I can fix them.
+					</p><br />
+					<p>
+						If you need to contact me, I can be contacted at <br>
+						rnordman+shiningforcestation@protonmail.com
+					</p>
+
+			</div>
 		</div>
 	</body>
 </html>
