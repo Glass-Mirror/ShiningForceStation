@@ -1,8 +1,15 @@
 #list{
 	position:relative;
-	left:calc(50% - 200px);
+	left:50%;
+	transform:translate(calc(-50% - 6px) ,0%);
 
-	max-width:400px;
+	max-width:600px;
+}
+#list img{
+	width:calc(100%-12*6);
+}
+#list td{
+	width:16.6%;
 }
 
 .linkLoc{
