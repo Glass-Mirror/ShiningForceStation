@@ -34,6 +34,13 @@
 	width: 40px;
 }
 
+#otherResources{
+	text-align: center;
+}
+#otherResources a{
+	color:#e6e9ad;
+	text-decoration: none;
+}
 
 
 
