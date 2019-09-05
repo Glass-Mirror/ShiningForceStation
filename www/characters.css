@@ -73,22 +73,22 @@
 
 @media only screen and (min-width:1300px){
 	.stats{
-		position: relative;
-		top:-450px;
+		position: absolute;
+		top:100px;
 		left:calc((50% - 175px)/2);
 		transform:translate(-50%, 0%);
 	}
 
 	.weapons{
-		position: relative;
-		top:-350px;
+		position: absolute;
+		top:300px;
 		left:calc((50% - 175px)/2);
 		transform:translate(-50%, 0%);
 	}
 
 	.spells{
-		position: relative;
-		top:-700px;
+		position: absolute;
+		top:100px;
 		left:calc((50% + 175px) + calc(calc(calc(100%) - calc(50% + 175px))/2));
 		transform:translate(-50%, 0%);
 	}
@@ -104,17 +104,6 @@
 		height: 700px;
 	}
 
-	.noPromo .spells{
-		top:-600px;
-	}
-
-	.noPromoNoWeap .spells{
-		top:-500px;
-	}
-
-	.noWeap .spells{
-		top:-600px;
-	}
 }
 
 @media only screen and (max-width:470px){
