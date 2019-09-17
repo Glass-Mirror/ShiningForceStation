@@ -61,6 +61,14 @@ body{
 	height:12px;
 }
 
+#otherResources{
+	text-align: center;
+}
+#otherResources a{
+	color:#e6e9ad;
+	text-decoration: none;
+}
+
 @media only screen and (max-width:799px){
     #mobileNav{
         display:inline !important;

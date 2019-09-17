@@ -43,3 +43,12 @@
 
 	max-width:900px;
 }
+
+#otherResources{
+	max-width:900px;
+	margin-top:20px;
+	position:relative;
+	left:50%;
+	transform:translate(calc(-50% - 6px), 0%);
+	margin-bottom:12px;
+}
