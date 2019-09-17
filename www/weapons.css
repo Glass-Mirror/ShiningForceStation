@@ -75,3 +75,11 @@
 	margin-bottom:12px;
 }
 
+@media only screen and (max-width:360px){
+	.details table td:nth-child(6){
+			display:none;
+	}
+	.details table th:nth-child(6){
+			display:none;
+	}
+}

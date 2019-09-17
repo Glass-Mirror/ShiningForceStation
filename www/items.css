@@ -49,6 +49,24 @@
 	margin-top:20px;
 	position:relative;
 	left:50%;
-	transform:translate(calc(-50% - 6px), 0%);
+	transform:translate(calc(-50%), 0%);
 	margin-bottom:12px;
+}
+
+@media only screen and (max-width:430px){
+	.details table td:nth-child(4){
+			display:none;
+	}
+	.details table th:nth-child(4){
+			display:none;
+	}
+}
+
+@media only screen and (max-width:360px){
+	.details table td:nth-child(2){
+			display:none;
+	}
+	.details table th:nth-child(2){
+			display:none;
+	}
 }
