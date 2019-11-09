@@ -1,0 +1,68 @@
+/*
+	Color Theme
+	Header styling
+	Fancy borders
+	Back To Top buttom
+*/
+
+body{
+	background-color: #0a2351;
+	color:#e6e9ed;
+}
+
+#header{
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:80px;
+	z-index:800;
+	background-color:#0a2351;
+}
+
+#desktopNav{
+	float:right;
+	height:100%;
+}
+#desktopNav td{
+	padding-right:2vw;
+}
+#desktopNav a{
+	color:#e6e9ed;
+	text-decoration:none;
+}
+
+#overviewTableWrapper{
+    max-width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#overviewTable table{
+    width:100%;
+}
+#overviewTable td{
+    text-align:center;
+}
+#overviewTable img{
+    width:100%;
+}
+
+
+#content{
+	position:relative;
+	top:100px;
+}
+
+.fancyBorder{ 
+    width:calc(100% - 12px);
+
+    border:2px solid #6B4900;
+    box-sizing: border-box;
+
+    margin:6px;
+
+    box-shadow: 
+        0px 0px 0px 2px #FFFFFF,
+        0px 0px 0px 4px #FFB64A,
+        0px 0px 0px 6px #6B4900;
+}
